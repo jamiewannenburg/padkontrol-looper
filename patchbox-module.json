@@ -1,6 +1,6 @@
 {
   "name": "padkontrol-looper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure Data patch for PadKontrol Looper",
   "main": "index.js",
   "keywords": [
