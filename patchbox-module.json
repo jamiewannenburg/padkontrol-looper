@@ -1,19 +1,11 @@
 {
   "name": "padkontrol-looper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pure Data patch for PadKontrol Looper",
-  "main": "index.js",
-  "keywords": [
-    "puredata",
-    "midi",
-    "looper",
-    "padkontrol"
-  ],
   "author": "Jamie Wannenburg",
   "license": "MIT",
   "depends_on": [
       "jack.service",
-      "pisound-ctl.service",
       "touchosc2midi.service",
       "amidiauto.service"
   ],
