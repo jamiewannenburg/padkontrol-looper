@@ -4,29 +4,18 @@ This module provides a Pure Data patch for the PadKontrol Looper project.
 
 ## Installation
 
-    patchbox module install https://github.com/jamiewannenburg/padkontrol-looper.git
-
-Manual
-
-1. SSH into your Raspberry Pi
-2. Navigate to the patchbox modules directory:
-   ```bash
-   cd /home/patchbox/modules
-   ```
-3. Clone this repository:
-   ```bash
-   git clone https://github.com/jamiewannenburg/padkontrol-looper.git
-   ```
-4. Restart Patchbox:
-   ```bash
-   sudo systemctl restart patchbox
-   ```
+    patchbox module install https://github.com/jamiewannenburg/padkontrol-looper
 
 ## Usage
 
-The module will be available in the Patchbox menu under "PadKontrol Looper".
+The module will be available in the Patchbox menu under "padkontrol-looper".
 
     patchbox module activate padkontrol-looper
+
+or more verbosely
+
+   
+    patchbox module launch padkontrol-looper
 
 ## Requirements
 
