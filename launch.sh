@@ -8,19 +8,22 @@
 #
 
 . /usr/local/pisound/scripts/common/start_puredata.sh
-PATCH="/usr/local/patchbox-modules/imported/padkontrol/padkontrol-looper.pd"
-shift
+DIR=$(dirname "$0")
+PATCH="$DIR/pd/padkontrol-looper.pd"
 
-echof
+echo
 echo "$PATCH"
 echo "$@"
 
-#(
-	# Connect the osc2midi bridge to the MIDI Inputs and to Pure Data.
-#	sleep 4
+(
+	# Connect the padkontrol to Pure Data.
+	sleep 4
 	# /usr/local/pisound-ctl/connect_osc2midi.sh "pisound-ctl"
+	aconnect -x;
+	aconnect "padKONTROL:1" "Pure Data:0"
+	aconnect -d "Pure Data:1" "padKONTROL:1"
 #	aconnect "pisound-ctl" "Pure Data";
 #	aconnect -d "Pure Data:1" "pisound-ctl"
-#) &
+) &
 
 start_puredata "$PATCH" $@

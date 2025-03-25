@@ -1,9 +1,9 @@
 {
   "name": "padkontrol-looper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pure Data patch for PadKontrol Looper",
   "author": "Jamie Wannenburg",
-  "license": "MIT",
+  "launch_mode": "auto",
   "depends_on": [
       "jack.service",
       "touchosc2midi.service",
