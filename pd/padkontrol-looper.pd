@@ -1,0 +1,4 @@
+#N canvas 0 0 450 300 10;
+#X obj 50 50 comment This is where your main patch content will go;
+#X obj 50 100 comment Add your objects, connections, and logic here;
+#X connect 0 0 1 0; 
