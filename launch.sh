@@ -19,9 +19,9 @@ echo "$@"
 	# Connect the padkontrol to Pure Data.
 	sleep 4
 	# /usr/local/pisound-ctl/connect_osc2midi.sh "pisound-ctl"
-	aconnect -x;
-	aconnect "Pure Data:Pure Data Midi-Out 1" "padKONTROL:padKONTROL padKONTROL _ CTRL"
-	aconnect  "padKONTROL:padKONTROL padKONTROL _ CTRL" "Pure Data:Pure Data Midi-In 1"
+	aconnect -x
+	aconnect "Pure Data:1" "padKONTROL:1"
+	aconnect  "padKONTROL:1" "Pure Data:0"
 #	aconnect "pisound-ctl" "Pure Data";
 #	aconnect -d "Pure Data:1" "pisound-ctl"
 ) &
