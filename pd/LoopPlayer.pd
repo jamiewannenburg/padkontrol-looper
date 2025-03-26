@@ -1,12 +1,14 @@
-#N canvas -2033 76 1438 617 10;
+#N canvas 51 137 927 617 10;
 #X msg 43 455 stop;
 #X obj 43 518 timer;
 #X obj 43 543 * 48;
 #X obj 557 393 f;
-#X obj 922 422 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 922 422 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X msg 557 440 0 \$1;
 #X msg 604 464 stop;
-#X obj 1093 532 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 1093 532 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+1 1;
 #X obj 922 547 spigot;
 #X obj 984 464 spigot;
 #X obj 1093 570 == 0;
@@ -16,15 +18,17 @@
 #X text 67 271 play loop from beginning;
 #X obj 43 412 spigot;
 #X msg 213 418 start;
-#X obj 43 479 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 43 479 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X msg 121 383 1;
 #X msg 76 385 0;
 #X obj 43 358 t b b;
-#X floatatom 43 569 10 0 0 0 - - - 0;
-#X floatatom 557 418 10 0 0 0 - - - 0;
+#X floatatom 43 569 10 0 0 0 - - -;
+#X floatatom 557 418 10 0 0 0 - - -;
 #X obj 179 366 t b b b b;
 #X text 956 116 play once;
-#X obj 557 346 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 557 346 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X text 557 287 PLAYER;
 #X text 1223 322 10 seconds loop;
 #X text 1214 359 Sample Rate: 48KHz;
@@ -32,12 +36,18 @@
 #X text 938 345 LOOPER;
 #X text 956 67 INPUTS;
 #X msg 1093 500 0;
-#X obj 484 182 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 495 230 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 381 303 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 1139 148 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 228 324 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 958 157 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 484 182 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 495 230 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 381 303 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1139 148 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 228 324 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 958 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X text 1051 116 direct;
 #X obj 575 574 *~;
 #X text 366 284 stop now;
@@ -86,10 +96,12 @@
 #X obj 39 133 r StartRecording\$1;
 #X text 45 108 Flash on beat;
 #X obj 380 239 afterLoopLength;
-#X text 1188 286 TODO make this depend on PPB and LoopLength, f 25;
+#X text 1188 286 TODO make this depend on PPB and LoopLength, f 25
+;
 #X obj 245 184 spigot;
 #X text 180 228 Playing;
-#X obj 326 181 tgl 16 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 326 181 tgl 16 0 empty empty empty 0 -8 0 10 -262144 -1 -1 0
+1;
 #X obj 391 209 t b b b;
 #X msg 310 219 0;
 #X obj 154 177 s btn-flash;
@@ -98,9 +110,11 @@
 #X obj 242 277 atnextbeat;
 #X obj 270 250 sel 1;
 #X obj 672 172 s btn-off;
-#X obj 527 20 tgl 16 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 527 20 tgl 16 0 empty empty empty 0 -8 0 10 -262144 -1 -1 0
+1;
 #X text 565 84 Playing;
-#X obj 535 149 tgl 16 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 535 149 tgl 16 0 empty empty empty 0 -8 0 10 -262144 -1 -1 0
+1;
 #X text 569 147 Clear;
 #X msg 490 149 1;
 #X obj 414 120 loadbang;
@@ -114,7 +128,8 @@
 #X obj 425 36 loadbang;
 #X obj 635 198 float \$1;
 #X obj 698 199 s btn-on;
-#X obj 537 89 tgl 16 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 537 89 tgl 16 0 empty empty empty 0 -8 0 10 -262144 -1 -1 0
+1;
 #X obj 603 104 r beatpulse;
 #X obj 568 125 spigot;
 #X obj 616 125 float \$1;
@@ -126,7 +141,8 @@
 #X obj 316 279 atnextbeat;
 #X obj 606 197 bang;
 #X obj 367 61 t b b;
-#X obj 282 161 tgl 16 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 282 161 tgl 16 0 empty empty empty 0 -8 0 10 -262144 -1 -1 1
+1;
 #X obj 419 70 t b b b b;
 #X connect 0 0 17 0;
 #X connect 0 0 57 0;
