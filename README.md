@@ -5,6 +5,7 @@ This module provides a Pure Data patch for the PadKontrol Looper project.
 ## Installation
 
     patchbox module install https://github.com/jamiewannenburg/padkontrol-looper
+    
 
 ## Usage
 
