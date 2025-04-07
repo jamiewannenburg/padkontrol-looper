@@ -1498,7 +1498,7 @@
 #X connect 51 0 50 0;
 #X connect 53 0 52 0;
 #X restore 229 464 pd looper-out;
-#N canvas 230 276 1065 636 patchbay 0;
+#N canvas 282 197 1065 636 patchbay 0;
 #X obj 552 20 r light-prog;
 #X text 452 49 prog selected;
 #X text 638 43 prog unselected;
@@ -1535,7 +1535,7 @@
 #X obj 870 196 sel 1 0;
 #X obj 942 195 sel 1 0;
 #X obj 408 197 loadbang;
-#X obj 528 124 sel 1 0;
+#X obj 977 127 sel 1 0;
 #X obj 614 116 spigot;
 #X obj 941 169 int;
 #X obj 877 170 int;
@@ -1715,6 +1715,18 @@
 #X connect 36 0 40 0;
 #X connect 36 0 39 0;
 #X connect 36 0 38 0;
+#X connect 36 0 72 0;
+#X connect 36 0 71 0;
+#X connect 36 0 70 0;
+#X connect 36 0 69 0;
+#X connect 36 0 94 0;
+#X connect 36 0 93 0;
+#X connect 36 0 92 0;
+#X connect 36 0 91 0;
+#X connect 36 0 116 0;
+#X connect 36 0 115 0;
+#X connect 36 0 114 0;
+#X connect 36 0 113 0;
 #X connect 37 0 50 0;
 #X connect 38 0 34 0;
 #X connect 39 0 33 0;
