@@ -1,6 +1,6 @@
 {
   "name": "padkontrol-looper",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Pure Data patch for PadKontrol Looper",
   "author": "Jamie Wannenburg",
   "launch_mode": "auto",

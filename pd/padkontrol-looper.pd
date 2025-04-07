@@ -1,4 +1,4 @@
-#N canvas 784 97 835 550 12;
+#N canvas 179 136 835 550 12;
 #X text 141 50 Enter native mode;
 #N canvas 41 136 933 600 native_mode 0;
 #X obj 74 482 midiout;
@@ -1914,7 +1914,9 @@
 #X connect 169 0 97 0;
 #X connect 169 0 98 0;
 #X restore 87 444 pd patchbay;
+#X obj 88 22 delay 5000;
 #X connect 2 0 1 0;
+#X connect 2 0 33 0;
 #X connect 5 0 4 0;
 #X connect 6 0 14 0;
 #X connect 12 0 13 0;
@@ -1952,3 +1954,4 @@
 #X connect 32 1 17 1;
 #X connect 32 2 17 2;
 #X connect 32 3 17 3;
+#X connect 33 0 1 0;
